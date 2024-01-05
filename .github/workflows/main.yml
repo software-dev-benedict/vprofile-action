@@ -73,7 +73,7 @@ jobs:
           context: ./
 
   DeployToEKS:
-    needs: BUILD_PUBLISH
+    needs: BUILD_AND_PUBLISH
     runs-on: ubuntu-latest
     steps:
       - name: Code checkout
